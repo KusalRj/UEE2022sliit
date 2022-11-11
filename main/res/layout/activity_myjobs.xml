@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddark"
+    tools:context=".myjobs">
+
+    <Button
+        android:id="@+id/createNewJobBtn"
+        android:layout_width="302dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginBottom="16dp"
+
+        android:background="@drawable/btnhome001"
+        android:fontFamily="sans-serif-light"
+        android:text="Create New Job"
+        android:textAlignment="viewStart"
+        app:backgroundTint="@null"
+        app:cornerRadius="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewCreatedJobsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeColor="#FFFDFD"
+        app:strokeWidth="3dp"
+        tools:ignore="OnClick" />
+
+
+
+    <Button
+        android:id="@+id/viewCreatedJobsBtn"
+        android:layout_width="302dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="218dp"
+        android:background="@drawable/btnhome001"
+        android:fontFamily="sans-serif-light"
+        android:text="My Created Jobs"
+        android:textAlignment="viewStart"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#FDFDFD" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/useraccount" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnhome_ek1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:text="Create Jobs"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
